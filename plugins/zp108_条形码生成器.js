@@ -1,7 +1,7 @@
 function onInit({ exc, props, container }) {
     exc('load("https://cdn.jsdelivr.net/npm/jsbarcode@latest/dist/JsBarcode.all.min.js")', {}, () => {
         container.appendChild(document.createElement("svg"))
-        new JsBarcode(container.firstElementChild, props.value {})
+        new JsBarcode(container.firstElementChild, props.value, {})
     })
 }
 
