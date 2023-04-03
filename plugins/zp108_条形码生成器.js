@@ -1,4 +1,4 @@
-function onInit({ exc, props, container }) {
+function init({ exc, props, container }) {
     exc('load("https://cdn.jsdelivr.net/npm/jsbarcode@latest/dist/JsBarcode.all.min.js")', {}, () => {
         let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg")
         container.appendChild(svg)
@@ -13,7 +13,7 @@ $plugin({
         type: "text",
         label: "内容"
     }],
-    onInit
+    init
 })
 
 
