@@ -5,7 +5,7 @@ module.exports = {
     mode: process.env.mode || "development",
     devtool: false,
     entry: {
-        "zp108": "./plugins/zp108_条形码生成器.js",
+        "zp108": "./src/zp108_条形码生成器.js",
     },
     output: {
         path: path.join(__dirname, "build/"),
